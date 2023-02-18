@@ -1,0 +1,10 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+.myLink {
+  display: inline-block;
+  padding: 16px 16px;
+}
