@@ -1,7 +1,7 @@
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
+import { Inter } from "@next/font/google"
+import styles from "@/styles/Home.module.css"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 const ITEMS = [
   {
@@ -22,10 +22,9 @@ const ITEMS = [
   {
     href: "https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app",
     title: "Deploy",
-    description:
-      "Instantly deploy your Next.js site to a shareable URL with Vercel.",
+    description: "Instantly deploy your Next.js site to a shareable URL with Vercel.",
   },
-];
+]
 
 export function Links() {
   return (
@@ -44,8 +43,8 @@ export function Links() {
             </h2>
             <p className={inter.className}>{item.description}</p>
           </a>
-        );
+        )
       })}
     </div>
-  );
+  )
 }
