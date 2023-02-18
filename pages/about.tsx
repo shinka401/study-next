@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { HeadLine } from "@/component/HeadLine";
 import { Links } from "@/component/Links";
 import Images from "@/component/Images";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
   return (
