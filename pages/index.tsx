@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Main } from "@/component/Main";
 import { Header } from "@/component/Header";
 import { useEffect } from "react";
+import { count } from "console";
 
 export default function Home() {
   useEffect(() => {
@@ -11,7 +12,7 @@ export default function Home() {
       console.log("unmount");
       document.body.style.backgroundColor = "";
     };
-  });
+  }, []);
   return (
     <>
       <Head>
