@@ -1,8 +1,17 @@
 import Head from "next/head";
 import { Main } from "@/component/Main";
 import { Header } from "@/component/Header";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    console.log("mount");
+    document.body.style.backgroundColor = "lightblue";
+    return () => {
+      console.log("unmount");
+      document.body.style.backgroundColor = "";
+    };
+  });
   return (
     <>
       <Head>
