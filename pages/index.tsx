@@ -1,8 +1,5 @@
 import Head from "next/head";
-import styles from "@/styles/Home.module.css";
-import { HeadLine } from "@/component/HeadLine";
-import { Links } from "@/component/Links";
-import Images from "@/component/Images";
+import { Main } from "@/component/Main";
 
 export default function Home() {
   return (
@@ -13,12 +10,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <HeadLine title="index" />
-
-        <Images />
-        <Links />
-      </main>
+      <Main page="index" />
     </>
   );
 }
