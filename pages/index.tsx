@@ -1,18 +1,9 @@
 import Head from "next/head";
-import { Main } from "@/component/Main";
 import { Header } from "@/component/Header";
-import { useEffect } from "react";
-import { count } from "console";
+import styles from "@/styles/Home.module.css";
+import Posts from "@/component/Posts";
 
-export default function Home() {
-  useEffect(() => {
-    console.log("mount");
-    document.body.style.backgroundColor = "lightblue";
-    return () => {
-      console.log("unmount");
-      document.body.style.backgroundColor = "";
-    };
-  }, []);
+const Home = () => {
   return (
     <>
       <Head>
@@ -22,7 +13,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Main page="index" />
+      <Posts />
     </>
   );
-}
+};
+export default Home;

@@ -7,7 +7,7 @@ export function Header() {
       <Link href="/" className={styles.myLink}>
         Index
       </Link>
-      <Link href="/about" className={styles.myLink}>
+      <Link href="/about" className={styles.mylLink}>
         About
       </Link>
     </header>
